@@ -1,0 +1,53 @@
+.head-nav-top{
+	background-color: #444;
+	height:35px;
+	line-height: 35px;
+	text-align: right;
+	color:#a8a8a8;
+	font-family: "DINCond-Bold";
+	font-weight: bolder;
+	font-size: 13px;
+}
+.nav-tel{
+	margin-right: 20px;
+}
+.weixin-logo,.tmall-logo{
+	opacity:1;
+}
+.navbar-brand{
+	font-size: 35px;
+}
+.head-nav-title{
+	height:auto;
+	background-color: #1a1a1a;
+	padding:11px 0;
+}
+
+.nav-item>a{
+	text-decoration: none;
+	color:#fff;
+}
+/* .nav-china>img:hover,.nav-world>img:hover{
+	cursor: pointer;
+	background-color: #FF0000;
+} */
+.navbar-nav>li{
+	margin:0 10px;
+}
+.china-place,.world-place{
+	position: fixed;
+	right: 25px;
+	width:250px;
+	hieght:200px;
+	background-color: #000000;
+	opacity: 0.7;
+	color:#fff;
+	border-radius: 2px;
+	display: none;
+	z-index:999;
+}
+.china-place>a,.world-place>a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 14px;
+}

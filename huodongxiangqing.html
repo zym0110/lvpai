@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="./css/bootstrap.css">
+		<link rel="stylesheet" href="./css/base.css">
+		<link rel="stylesheet" href="./css/amazeui.min.css">
+		<title>活动详情</title>
+	</head>
+	<body>
+		<!-- 引入页面头部 -->
+		<div id="header"></div>
+		<!-- 第一部分 -->
+		<div class="brand-banner">
+			<img class="brand-banner-picture w-100" src="img/20190521073754956.jpg" >
+		</div>
+		<div class="only-travel scrolllisten am-panel border-0 mb-0">
+			<img class="w-100" src="img/20190521073755158.jpg" >
+		</div>
+		<div class="scrolllisten am-panel border-0 mb-0">
+			<img class="w-100" src="img/20190521073755445.jpg" >
+		</div>
+		<div class="scrolllisten am-panel border-0 mb-0">
+			<img class="w-100" src="img/20190521073755153.jpg" >
+		</div>
+		<div class="scrolllisten am-panel border-0 mb-0">
+			<img class="w-100" src="img/20190521073756967.jpg" >
+		</div>
+		<div class="scrolllisten am-panel border-0 mb-0">
+			<img class="w-100" src="img/20190521073756827.jpg" >
+		</div>
+		<div class="scrolllisten am-panel border-0 mb-0">
+			<img class="w-100" src="img/20190521073756911.jpg" >
+		</div>
+		<div class="scrolllisten am-panel border-0 mb-0">
+			<img class="w-100" src="img/20190521073757388.jpg" >
+		</div>
+		<div class="scrolllisten am-panel border-0 mb-0">
+			<img class="w-100" src="img/20190521073757750.jpg" >
+		</div>
+		<div class="scrolllisten am-panel border-0 mb-0">
+			<img class="w-100" src="img/20190521073803453.jpg" >
+		</div>
+		<div class="scrolllisten am-panel border-0 mb-0">
+			<img class="w-100" src="img/20190521073811220.jpg" >
+		</div>
+		<div class="scrolllisten am-panel border-0 mb-0">
+			<img class="w-100" src="img/20190521073811799.jpg" >
+		</div>
+		<div class="scrolllisten am-panel border-0 mb-0">
+			<img class="w-100" src="img/20190521073812665.jpg" >
+		</div>
+		<div class="scrolllisten am-panel border-0 mb-0">
+			<img class="w-100" src="img/20190521073812219.jpg" >
+		</div>
+		<div class="scrolllisten am-panel border-0 mb-0">
+			<img class="w-100" src="img/20190521073812669.jpg" >
+		</div>
+		<div class="scrolllisten am-panel border-0 mb-0">
+			<img class="w-100" src="img/20190521073812138.jpg" >
+		</div>
+		<div class="scrolllisten am-panel border-0 mb-0">
+			<img class="w-100" src="img/20190521073813202.jpg" >
+		</div>
+		<div class="scrolllisten am-panel border-0 mb-0">
+			<img class="w-100" src="img/20190521073813594.jpg" >
+		</div>
+		<!-- 引入页面底部 -->
+		<div id="footer"></div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/amazeui.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				//引入网页头部
+				$("#header").load("header.html");
+				//引入页面底部
+				$("#footer").load("footer.html");
+				//设立滚动侦听
+				$(".scrolllisten").scrollspy({
+					animation:"slide-bottom",
+					delay:200,
+					repeat:false
+				});
+			})
+		</script>
+	</body>
+</html>

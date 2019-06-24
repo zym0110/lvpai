@@ -1,0 +1,111 @@
+/*##################头部样式-start####################*/
+.banner{
+    position: relative;
+    margin: auto;
+
+}
+.banner img {
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+.banner .banner_nav{
+    position: absolute;
+    height: 4.25rem;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    background-color: #080608;
+    opacity: 0.8;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.banner .banner_nav a{
+    padding-right:0.5rem;
+    display: inline-block;
+    padding-left: 0.5rem;
+    height: 1rem;
+    margin-top: 1.625rem;
+    line-height: 1rem;
+    color: #fff;
+
+    border-right: 1px solid #fff ;
+}
+.banner .banner_nav a:hover{
+    color: #c0af93;
+}
+/*##################头部样式-end####################*/
+
+/*##################body样式-start###################*/
+.switch{
+    background-color: #f0f0f0;
+}
+.switch-title{
+    width:100%;
+    text-align: center;
+    overflow: hidden;
+    padding:56px 0;
+}
+.switch-title img{
+    width:100%;
+    max-width:1920px;
+}
+/*##################body样式-start###################*/
+.center-list{
+    width: 77%;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 5.75rem;
+}
+.center-list .center-item img{
+    width: 100%;
+}
+.center-list .center-item .center-item-img{
+    position: absolute;
+    z-index: 1;
+    display: none;
+    height: auto;
+    left: 0;
+    top: 0;
+}
+.center-list .pic-text{
+    width: 100%;
+    padding-top: 1.875rem;
+    text-align: left;
+}
+.center-list .pic-text h3{
+    font-size: 1rem;
+    color: #111;
+    font-weight: normal;
+}
+.center-list .pic-text h3 em{
+    float: right;
+    font-style: inherit;
+    font-weight: inherit;
+}
+.center-list .pic-text h2{
+    font-size: 1.375rem;
+    padding: 0.625rem 0;
+    border-bottom: solid 1px #efebe4;
+    margin-bottom: 0.625rem;
+}
+.center-list .pic-text .pic-text-a{
+    float: right;
+    height: 1.5rem;
+    background-color: #ff283c;
+    color: #fff;
+}
+.center-list .pic-text a{
+    color: #333;
+}
+.center-list .center-item a:hover {
+    text-decoration: none;
+    opacity: 1;
+}
+.center-list:hover .pic-text h3{ color: #bfaf93; }
+.center-list:hover .pic-text h2 a{ color: #bfaf93; }
+.center-list:hover .pic-text p{ color: #bfaf93; }
+.center-list:hover .pic-text .pic-text-a{ background: #bfaf93; color: #FFF; }
+.center-list:hover .center-item-img { display: block; }
+/*##################body样式-end###################*/
