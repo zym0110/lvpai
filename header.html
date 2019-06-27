@@ -1,6 +1,18 @@
-
-	<link rel="stylesheet" href="css/header.css">
-	<div class="head-nav">
+<!-- <!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	    <link rel="stylesheet" href="css/bootstrap.css">
+	    <link rel="stylesheet" href="css/common.css">
+		   <link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/swiper.min.css">
+	<title>春海扬明全球旅拍</title>
+</head>
+<body> -->
+		<link rel="stylesheet" href="css/header.css">
+		<div class="head-nav">
 			<div class="head-nav-top w-100">
 				<img class="weixin-logo" src="img/weixin-hover.png" alt="">
 				<img src="img/weibo.png" alt="">
@@ -13,46 +25,46 @@
 					<div class="col-lg-1 d-flex justify-content-between">
 						<a href="" class="navbar-brand">旅拍</a>
 						<!-- 折叠后的按钮 -->
-						<button data-toggle="collapse" data-target="#content" class="navbar-toggler">
+						<button onclick="navbarToggle();" type="button"class="navbar-toggler">
 							<span class="navbar-toggler-icon"></span>
 						</button>
 					</div>
 					<!-- 导航栏菜单 -->
-					<div id="content" class="collapse navbar-collapse d-lg-flex justify-content-lg-center col-lg-9">
+					<div id="navbar" class="collapse navbar-collapse d-lg-flex justify-content-lg-center col-lg-9">
 						<ul class="navbar-nav">
 							<li class="nav-item">
-								<a href="javascript:;">首页</a>
+								<a class="nav-link" href="index.html">首页</a>
 							</li>
 							<li class="nav-item">
-								<a href="javascript:;">品牌介绍</a>
+								<a class="nav-link" href="brand_intr.html">品牌介绍</a>
 							</li>
 							<li class="nav-item">
-								<a href="kepian1.html">真实客片</a>
+								<a class="nav-link" href="kepian1.html">真实客片</a>
 							</li>
 							<li class="nav-item">
-								<a href="zuopin1.html">旅拍作品</a>
+								<a class="nav-link" href="zuopin1.html">旅拍作品</a>
 							</li>
 							<li class="nav-item">
-								<a href="weidianying.html">微电影</a>
+								<a class="nav-link" href="weidianying.html">微电影</a>
 							</li>
 							<li class="nav-item">
-								<a href="weekkepian.html">每周客片</a>
+								<a class="nav-link" href="weekkepian.html">每周客片</a>
 							</li>
+<!-- 							<li class="nav-item"> -->
+<!-- 								<a class="nav-link" href="javascript:;">摄影师</a> -->
+<!-- 							</li> -->
+<!-- 							<li class="nav-item"> -->
+<!-- 								<a class="nav-link" href="javascript:;">明星网红</a> -->
+<!-- 							</li> -->
+<!-- 							<li class="nav-item"> -->
+<!-- 								<a class="nav-link" href="javascript:;">真实好评</a> -->
+<!-- 							</li> -->
 							<li class="nav-item">
-								<a href="javascript:;">摄影师</a>
-							</li>
-							<li class="nav-item">
-								<a href="javascript:;">明星网红</a>
-							</li>
-							<li class="nav-item">
-								<a href="javascript:;">真实好评</a>
-							</li>
-							<li class="nav-item">
-								<a href="huodong.html">优惠活动</a>
+								<a class="nav-link" href="huodong.html">优惠活动</a>
 							</li>
 						</ul>
 					</div>
-					<div class="col-lg-1 d-flex p-0">
+					<div class="col-lg-1 d-flex p-0 hidden">
 						<div class="nav-china mr-3">
 							<img src="img/china.png" alt="">
 						</div>
@@ -63,7 +75,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="china-place mt-2 pb-2 pl-3 pt-2">
+		<!-- <div class="china-place mt-2 pb-2 pl-3 pt-2">
 			<img class="mr-2 mb-1" src="img/place-hover.png" alt="">
 			<a class="mr-1" href="javascript:;">三亚</a>
 			<img class="ml-5 mr-2 mb-1" src="img/place-hover.png" alt="">
@@ -110,38 +122,56 @@
 			<a class="mr-1" href="javascript:;">罗马</a>
 			<img class="ml-5 mr-2 mb-1" src="img/place-hover.png" alt="">
 			<a href="javascript:;">纽约</a><br>
-		</div>
-
+		</div> -->
+		
 		<script src="js/jquery.min.js"></script>
 		<script src="js/popper.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-
+		
 		<script>
-			$(".world-place").hover(function(){},function(){
-				$(".china-place").hide();
-				$(".nav-china").css("background-color","#1a1a1a");
-				$(".world-place").hide();
-				$(".nav-world").css("background-color","#1a1a1a");
-			});
-			$(".nav-china").children("img").hover(function(){
-				$(".world-place").hide();
-				$(".nav-world").css("background-color","#1a1a1a");
-				$(".nav-china").css("background-color","#f00");
-				$(".nav-china").css("cursor","pointer");
-				$(".china-place").show();
-			},function(){});
-			$(".china-place").hover(function(){},function(){
-				$(".world-place").hide();
-				$(".nav-world").css("background-color","#1a1a1a");
-				$(".china-place").hide();
-				$(".nav-china").css("background-color","#1a1a1a");
-			});
-			$(".nav-world").children("img").hover(function(){
-				$(".china-place").hide();
-				$(".nav-china").css("background-color","#1a1a1a");
-				$(".nav-world").css("background-color","#f00");
-				$(".nav-world").css("cursor","pointer");
-				$(".world-place").show();
-			},function(){});
+			// $(".nav-china").children("img").hover(function(){
+			// 	$(".world-place").hide();
+			// 	$(".nav-world").css("background-color","#1a1a1a");
+			// 	$(".nav-china").css("background-color","#f00");
+			// 	$(".nav-china").css("cursor","pointer");
+			// 	$(".china-place").show();
+			// },function(){});
+			// $(".china-place").hover(function(){},function(){
+			// 	$(".world-place").hide();
+			// 	$(".nav-world").css("background-color","#1a1a1a");
+			// 	$(".china-place").hide();
+			// 	$(".nav-china").css("background-color","#1a1a1a");
+			// });		
+			// $(".nav-world").children("img").hover(function(){
+			// 	$(".china-place").hide();
+			// 	$(".nav-china").css("background-color","#1a1a1a");
+			// 	$(".nav-world").css("background-color","#f00");
+			// 	$(".nav-world").css("cursor","pointer");
+			// 	$(".world-place").show();
+			// },function(){});
+			// $(".world-place").hover(function(){},function(){
+			// 	$(".china-place").hide();
+			// 	$(".nav-china").css("background-color","#1a1a1a");
+			// 	$(".world-place").hide();
+			// 	$(".nav-world").css("background-color","#1a1a1a");
+			// });
+			
+			if($(window).innerWidth()<768){
+				$(".hidden").children().hide();
+			}else{
+				$(".hidden").children().show();
+			}
+			$(window).resize(function(){
+				if($(window).innerWidth()<768){
+					$(".hidden").children().hide();
+				}else{
+					$(".hidden").children().show();
+				}
+			})
+			
+			function navbarToggle(){
+				$("#navbar").slideToggle();
+			}
 		</script>
-
+<!-- 	</body>
+</html> -->

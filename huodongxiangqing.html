@@ -5,7 +5,14 @@
 		<link rel="stylesheet" href="./css/bootstrap.css">
 		<link rel="stylesheet" href="./css/base.css">
 		<link rel="stylesheet" href="./css/amazeui.min.css">
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/footer.css">
 		<title>活动详情</title>
+		<style>
+			.scrolllisten{
+				opacity: 0;
+			}
+		</style>
 	</head>
 	<body>
 		<!-- 引入页面头部 -->
@@ -69,13 +76,13 @@
 		<div id="footer"></div>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootbox.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/popper.min.js"></script>
 		<script src="js/amazeui.min.js"></script>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
 		<script>
 			$(document).ready(function(){
-				//引入网页头部
 				$("#header").load("header.html");
-				//引入页面底部
 				$("#footer").load("footer.html");
 				//设立滚动侦听
 				$(".scrolllisten").scrollspy({
