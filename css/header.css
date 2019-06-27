@@ -12,7 +12,7 @@
 	margin-right: 20px;
 }
 .weixin-logo,.tmall-logo{
-	opacity:1;
+	opacity:0.5;
 }
 .navbar-brand{
 	font-size: 35px;
@@ -27,10 +27,11 @@
 	text-decoration: none;
 	color:#fff;
 }
-/* .nav-china>img:hover,.nav-world>img:hover{
+.nav-china>img:hover,.nav-world>img:hover{
 	cursor: pointer;
 	background-color: #FF0000;
-} */
+	border-radius: 2px;
+}
 .navbar-nav>li{
 	margin:0 10px;
 }
@@ -50,4 +51,10 @@
 	text-decoration: none;
 	color: #fff;
 	font-size: 14px;
+}
+.navbar-nav>.nav-item>a{
+	font-size: 14px !important;
+}
+.nav-link{
+	color: #fff !important;
 }

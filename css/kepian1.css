@@ -109,6 +109,7 @@
 .kepian_list .card{
     border: 0px solid rgba(0, 0, 0, 0.125);
     position: relative;
+	cursor: pointer;
 }
 /*hover*/
 .kepian_list .card .zhezhao{

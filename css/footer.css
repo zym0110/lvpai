@@ -27,10 +27,9 @@ a:hover{
 .foot-pic{
     background-size: 100%;
     height:243px;
-    position: relative;
 }
-.foot-pic img{
-    position: relative;
+.foot-pic>img{
+	position:relative;
 }
 .foot{
     background-color: rgb(40,40,40);

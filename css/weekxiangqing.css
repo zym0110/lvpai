@@ -158,7 +158,6 @@
     float:right;
 }
 .prev-next-center img{
-    display: block;
     margin: 0 auto;
     transition: all 0.8s ease-in-out;
 }

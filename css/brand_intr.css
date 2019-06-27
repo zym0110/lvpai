@@ -1,0 +1,46 @@
+.pic-intr{
+			position:relative;
+			margin-bottom: 0;
+		}
+		.p5{
+			width:40%;
+			margin-left: 16%;
+		}
+		.p6{
+			width:27%;
+			position:absolute;
+			bottom:0;
+			left: 56%;
+		}
+		.p7{
+			width:calc(67% + 0.5rem);
+			margin-left: 16%;
+		}
+		.p89{
+			width:calc(67% + 0.5rem);
+			margin-left: 16%;
+			overflow: hidden;
+		}
+		.p89>img{
+			display: inline-block;
+			width:49%;
+		}
+		.p89>img:first-child{
+			float: left;
+		}
+		.p89>img:last-child{
+			float: right;
+		}
+		.p10>img{
+			margin:45px 0;
+		}
+		.p44{
+			overflow: hidden;
+		}
+		.p44>img{
+			width:50%;
+			float: left;
+		}
+		.scrolllisten{
+			opacity: 0;
+		}
